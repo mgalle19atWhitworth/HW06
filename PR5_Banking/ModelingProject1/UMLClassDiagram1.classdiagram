@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="91598ca8-9a54-49f0-aded-e66077bb10d2" name="UMLClassDiagram1" linkedPackageId="9b5effc0-b6dc-4fcc-9dd5-2649fe933a7d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dfde192a-3d9d-416b-adbc-9026f061a139">
+      <profileInstance Id="385c5535-a166-455e-9476-5dcf0260d47c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f08c3c17-c71e-4498-840a-d480a947bdf7">
+      <profileInstance Id="43ed5703-4f93-422d-aeec-47d557186e00" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91b1fe35-8b02-4a3c-968c-13ebf4db5cae" name="Account" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="27ef853f-cd44-4a92-8f42-4d2d4cdfe7a8" />
+        <targetEnds>
+          <association Id="90c09763-6680-4758-8880-a00d3975d6a5" isDerived="false" sourceEndRoleName="Account" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c798c74-9e18-4ae7-b46c-ca1bef9c1751" name="Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="465105af-68bf-425b-8350-24b1e390f448" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7faa0998-2cfc-4d81-a679-97a7a3659773" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="0c1e3040-420b-4172-843b-b694ea20f81b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0052fb96-6aae-418e-8dd2-ea0d619f3248" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4c6ae09a-8bc1-40ca-b33c-fc02dac0ed9c" name="customer(type Customer)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f65bc73-57e3-462a-a900-c22c1e9eeb01" />
+          </property>
+          <property Id="be4b8110-7fc4-4b9d-b351-c5d3015f7bd2" name="int account_number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="87023e75-0c20-4d78-aa22-599c01fa19ab" />
+          </property>
+          <property Id="ceba56c8-c92e-4a14-9bee-17dc1645902f" name="double balance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7181b3ad-d2dd-4112-b22b-80c9b5a7026e" />
+          </property>
+          <property Id="4642c774-8864-44b0-81aa-750a50a13cc5" name="transactionsArray(type transaction*)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dde402be-a61b-4cf0-b39a-444cbccdbf61" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="03598c2d-e08a-401d-96a0-9668d8b0dbda" name="get_balance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3d831520-c934-4b02-ba5b-81ca6dac941a" />
+          </operation>
+          <operation Id="ebddce34-584e-4d47-89f6-d6b936a652a1" name="get_customer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e9dc898-5463-4546-9c9f-39dadd947ac9" />
+          </operation>
+          <operation Id="8bd2e30b-0608-4b90-aa20-47f9ab5f90ab" name="to_string" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b76bc00b-e08e-4335-b687-0795bc357dbb" />
+          </operation>
+          <operation Id="d67b44f4-4ccc-461c-94ad-0a7589529b38" name="set_customer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85588b06-be04-4c4c-9f1c-0a7a44c59a45" />
+          </operation>
+          <operation Id="df5fda96-2ac1-48c3-92b8-3bb171da44c8" name="set_balance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ed02b49-6e2e-46b9-afd5-5fe66df5b718" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c2323e83-f97a-4dbf-8641-da18d765acd1" name="Savings_Account" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c1ac1d28-3077-45a4-b8e4-b9d8b84aebef" />
+        <generalsInternal>
+          <generalization Id="c9efb5b7-3fd8-436f-954e-ef316c30c217" isSubstitutable="false">
+            <classMoniker Id="91b1fe35-8b02-4a3c-968c-13ebf4db5cae" LastKnownName="Account" />
+            <elementDefinition Id="f3ee9c9c-906a-4c38-8468-b413e9232656" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="22738ed6-9eac-4181-9f5e-ea14ca0e99cd" name="deposit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a1dd2ebb-7418-461e-b9f5-2cbe1668ef4f" />
+          </operation>
+          <operation Id="499afcb7-2490-481c-8ebf-38d03ba8f0f2" name="withdraw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e4300c26-de62-40c7-85cb-6294e44e4e45" />
+          </operation>
+          <operation Id="da2df62a-5f16-4cc7-8220-12db76af9896" name="add_interest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7fe6f8f8-4167-41bd-8529-7f9d0614f521" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d79001dc-987e-4f8e-a114-41d7220f3034" name="Checking_Account" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bce62b8e-d67d-4c29-96c2-87e0e6b7c1a3" />
+        <generalsInternal>
+          <generalization Id="3b112fe8-6b3b-4828-80cc-24d09781bf67" isSubstitutable="false">
+            <classMoniker Id="91b1fe35-8b02-4a3c-968c-13ebf4db5cae" LastKnownName="Account" />
+            <elementDefinition Id="f5ba8998-4145-43f5-827b-736875c62849" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="24cba9a1-ae39-4204-b771-d9bcd96204cf" name="deposit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e80c7a27-6c58-4322-ace4-e16e0052e4c1" />
+          </operation>
+          <operation Id="b43cd08f-d616-49c4-969d-dd09cd3c419f" name="withdraw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f57623af-1e59-43eb-96f9-ab97288a6acc" />
+          </operation>
+          <operation Id="a4b385fb-c1b5-446e-b99f-7ffdb83475d9" name="add_interest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4808506e-ac82-465a-9dd9-6688d4728bc1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c7d8300-e85a-437b-9080-03f87256ab6d" />
+        <ownedAttributesInternal>
+          <property Id="c4be3aaa-4571-477e-9371-bbcf9abd8640" name="string name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a39b98d-a9bd-41cf-bae6-700c8979961c" />
+          </property>
+          <property Id="8f44641f-620a-4a1f-a16d-f8e4f293840e" name="string address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="309c756f-24e8-4e22-8d48-6f19108b347a" />
+          </property>
+          <property Id="0d342ebb-f2cd-41e6-8d9f-4989d3be99aa" name="int age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5317f44-d436-4fb5-a6f5-2c22aecddebc" />
+          </property>
+          <property Id="b916ba33-3286-4715-8bd0-deb8faac8855" name="telephone_number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33d2203b-e24f-4975-8948-793b75c3bd26" />
+          </property>
+          <property Id="345110ba-7069-4be4-b456-05a53f4b1870" name="customer_number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93bc574d-bb24-4bee-8649-b0453443bc4a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9b9337fe-8e8f-40bf-82e6-562db7d4345a" name="getAdress" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85009223-5c7a-4071-a6a7-138f62480788" />
+          </operation>
+          <operation Id="3591efe3-e816-43e4-91af-a25c457797c0" name="getCustomer_number" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d81f5cef-e688-4800-954a-9e20bbc3a9ff" />
+          </operation>
+          <operation Id="e21e54b1-9099-4ad0-b874-240093b46599" name="setCustomer_number" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a825ccba-bda8-4153-b837-b9a139e55c57" />
+          </operation>
+          <operation Id="fe3199b1-16ba-47e2-a202-794c2cd7a3b8" name="getAge" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1eb1ea34-d1b1-416d-9438-faf003d5ba00" />
+          </operation>
+          <operation Id="d8e5bf8c-6a80-4ca2-9efe-cc8b194681bb" name="setAge" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86b8f852-a41b-4291-8505-b274d3cf1fc3" />
+          </operation>
+          <operation Id="2bdb05e9-50c4-44b9-83ef-c0faf2962cc8" name="setAddress" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea5187a2-c316-4d87-8ac4-8d12f9343439" />
+          </operation>
+          <operation Id="83a55f5d-775d-4740-a36a-5d952ccac2de" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ae49d6dc-8c4d-429c-9b36-67052e0213af" />
+          </operation>
+          <operation Id="4955fb9a-dea0-46e7-9b1d-f5317552493a" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ef7ae58c-378d-4673-8d3c-e444e097c059" />
+          </operation>
+          <operation Id="582f9aa9-0392-494a-bfb3-519d0c1eb811" name="getTelephone_number" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d1cff2ac-c5d1-4b73-99a3-2608323a8cb1" />
+          </operation>
+          <operation Id="b6a7bfac-ee69-4e39-8843-d1e8fcd1ad17" name="setTelehphone_number" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a5a6a1c-2c40-4d2e-ab15-12d17c3ea844" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b73481bb-6f52-4df9-b2e2-d4044a5735f0" name="Senior" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ec248bd0-ed9f-4831-9345-9eb1c60e1d5c" />
+        <generalsInternal>
+          <generalization Id="504691fe-9fb2-4c80-9b72-7547da8d1740" isSubstitutable="false">
+            <classMoniker Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" LastKnownName="Customer" />
+            <elementDefinition Id="dee2d401-84b1-4365-bc6e-45c4a783684a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="cb1f0198-d6bf-446f-98c9-dff13cfc0e6e" name="Savings_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e230a7cf-723c-4a9d-b02c-ca389f5456e5" />
+          </property>
+          <property Id="e62d00b5-8f37-4a2d-a1e0-d3c5727105e9" name="check_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffe806be-4830-47e2-9162-c4db1abe1803" />
+          </property>
+          <property Id="5ce4b372-cc54-4278-8fc3-ce4d1e944d4f" name="check_charge" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb8b08f4-fcb9-4d85-b948-cddd5f9010ce" />
+          </property>
+          <property Id="27f5b6cf-72cb-4b89-bf64-397300aa723b" name="overdraft_penalty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c9a13445-e3cd-4375-a3a3-4837fbf78c4b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="854cf223-6318-4639-920c-091187547198" name="Adult" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d3fc551-bc8d-4624-947c-dfbd3e2673c3" />
+        <generalsInternal>
+          <generalization Id="d68b9e9f-0200-41b3-a336-373f45365f89" isSubstitutable="false">
+            <classMoniker Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" LastKnownName="Customer" />
+            <elementDefinition Id="f1f654ea-8575-49a0-a8de-643fdecce89c" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="9998e7a2-2682-46b2-bfbb-459cd80634b2" name="Savings_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="589389f0-838a-4eea-bf51-d8f7cb0ffb6f" />
+          </property>
+          <property Id="6fd968f3-9642-4fc5-826c-651f519ddeae" name="check_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80ded3a8-d167-4953-a9c1-7d0e0d1bc9ce" />
+          </property>
+          <property Id="da7b1c84-56c3-4f88-85fe-88a5d11e319b" name="check_charge" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="837cf138-a018-46e6-82cd-9f1e4989b7f1" />
+          </property>
+          <property Id="96b0bb88-c19d-41ae-bde1-6223f82e16d9" name="overdraft_penalty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18f567b3-fe01-44a8-bc26-04b49e5aa4a8" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8e88903e-a009-490b-b42a-d93036b1e02a" name="Student" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26d5a08e-1f4c-446d-93fb-43451554dd9c" />
+        <generalsInternal>
+          <generalization Id="41f0d024-b826-41f9-a1ff-cb7641bad42b" isSubstitutable="false">
+            <classMoniker Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" LastKnownName="Customer" />
+            <elementDefinition Id="15d8a745-0a53-413a-bbbc-80a047699416" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="c71c9c5a-dfe7-4ebd-9889-1b8ba43c6d4e" name="Savings_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9671df8c-096c-4a9b-86dd-cd88f59ead68" />
+          </property>
+          <property Id="7096e084-2902-4ea5-9f15-5fa572c46cec" name="check_interest" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de20161a-c307-474c-aa41-df47098136bf" />
+          </property>
+          <property Id="2cd972e9-3eaf-439a-9502-95137fcf966e" name="check_charge" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4252a5b6-4d9c-4742-87b9-ab1d2905a5f6" />
+          </property>
+          <property Id="f22e772b-6865-4b62-a34c-2cc7b4f20919" name="overdraft_penalty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c28db39-0ee3-4445-aaa4-d6267e9fbcd3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="66132b1f-4129-49dc-ba68-75782aae7125" name="Bank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e5b42df4-efea-4722-966b-ecb82498e072" />
+        <targetEnds>
+          <association Id="05421138-f3b9-4702-85b8-fddaed7be5cf" isDerived="false" sourceEndRoleName="Bank" targetEndRoleName="Account" isLeaf="false" isAbstract="false">
+            <classMoniker Id="91b1fe35-8b02-4a3c-968c-13ebf4db5cae" LastKnownName="Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c11f7b54-c7ca-4e34-a75d-65d723aa8361" name="Bank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2dede8ce-23c6-4bf5-be20-63c87fa5bea7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="beb5421b-48ac-407e-b9b3-a7a0c172f065" name="Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="60d226b7-ca19-45ed-b60c-76140ba65e7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6c460d78-9535-4707-9561-918d5f142e39" />
+          </association>
+          <association Id="1bea64d5-3522-4166-b28b-5c02c27168d3" isDerived="false" sourceEndRoleName="Bank" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="48ba2d78-209c-4afd-93cd-f892b32a0d32" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df5c3ae5-4599-4e77-9401-4841bfb8af27" name="Bank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9031f7ab-40c5-49ce-b160-740d66bbe9e4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3e04704-4b35-4390-bbef-e2b29e880968" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="c8a97127-eeb8-4c56-9a15-5e3c483a1e5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8fc4c4f1-9672-43b1-b2ab-e347956d7b46" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e3e7952e-148e-4a79-98b7-416c8c043d22" name="int accounts*" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5dfae52-d777-47c8-866b-e929bc6afae0" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="24f9c6ef-1194-4d54-b72d-c84046caf317" name="add_account" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53b78f55-9f71-4fa1-b64a-962ce616fae7" />
+          </operation>
+          <operation Id="7feabdbd-6b22-44dc-8ef4-5e6be07b5686" name="make_deposit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b11130ca-f050-41fa-9937-b8c8b5c71039" />
+          </operation>
+          <operation Id="105abd29-b970-4902-aa2e-57f6bd8154b5" name="make_withdrawal" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87634e01-9426-4942-8349-80bb3cbbff81" />
+          </operation>
+          <operation Id="dcef7d97-366f-4179-9393-a3f664f6ae35" name="get_account" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0c7fbe1-2f0f-4c1b-8569-230032ebefe8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e88ec732-8f4c-4151-8732-52cd3f9916fe" name="Transaction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f12f76b5-3d53-4390-8a63-c4846641d804" />
+        <ownedAttributesInternal>
+          <property Id="31c5af53-b4dc-44ed-ae16-74b662416951" name="customer_number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12b014ce-34f2-4140-b855-bd5e65961b86" />
+          </property>
+          <property Id="fb006ed3-52dd-4f8f-8c6c-77fc84e00b48" name="transaction_type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8e3d36d-a215-460d-a927-c4f0c6cf9063" />
+          </property>
+          <property Id="2f6b132b-c282-45c9-9133-9eb4dfd4b6eb" name="amount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d2196bab-c60d-4118-9938-4e30046bc031" />
+          </property>
+          <property Id="6ed29a98-44ca-43f1-a7ab-c2c5a1317758" name="string fee" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca8ba0eb-33c6-4038-9e3c-25a85928f83f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5c183a77-245e-4009-8da7-5271c567b530" name="process_tran" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51163545-f3eb-4b02-8813-37b0b9e38ff6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9b5effc0-b6dc-4fcc-9dd5-2649fe933a7d" name="ModelingProject1">
+    <elementDefinition Id="93bc6238-03c4-46b4-b14a-6e9505d9a0e8" />
+  </package>
+</logicalClassDesignerModel>
